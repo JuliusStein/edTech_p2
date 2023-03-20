@@ -1,8 +1,8 @@
 import pygame
 import sys
 
-WIDTH = 800
-ROWS = 20
+WIDTH = 400
+ROWS = 10
 WIN = pygame.display.set_mode((WIDTH, WIDTH))
 
 pygame.display.set_caption("Game of Life")
