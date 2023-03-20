@@ -97,7 +97,9 @@ def neighbour(tile):
     # print(row, col, actual)
     return actual
 
-
+# it is important that the grid be updated in the array before the changes are enacted because
+# if the changes are enacted before the grid is updated, the changes will affect the following
+# cell's calcaulations
 def update_grid(grid):
     newgrid = []
     #iterate in row major order over the grid

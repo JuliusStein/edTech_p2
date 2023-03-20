@@ -1,5 +1,5 @@
 ## Conway's Game of Life
-This is a simple implementation of Conway's Game of Life in Python. It uses the pygame library to display the game and render the updates.
+This is a simple implementation of Conway's Game of Life in Python. It uses the pygame library to display the game and render the updates. 
 
 # Usage
 To run the game, simply clone this repository, run the following commands in the terminal:
