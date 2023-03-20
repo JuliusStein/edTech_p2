@@ -1,15 +1,14 @@
 import pygame
 import sys
 
-WIDTH = 400
-ROWS = 10
+WIDTH = 800
+ROWS = 20
 WIN = pygame.display.set_mode((WIDTH, WIDTH))
 
 pygame.display.set_caption("Game of Life")
 
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
-
 
 class Node:
     def __init__(self, row, col, width):
@@ -26,9 +25,7 @@ class Node:
 
 def make_grid(rows, width):
     grid = []
-
     gap = WIDTH // rows
-
     print(gap)
 
     for i in range(rows):
@@ -84,9 +81,9 @@ def neighbour(tile):
     col, row = tile.row, tile.col
 
     # creates a new list of all the neighbouring locations of the given tile
-    neighbours = [[row - 1, col - 1], [row - 1, col], [row - 1, col + 1],
-                  [row, col - 1], [row, col + 1],
-                  [row + 1, col - 1], [row + 1, col], [row + 1, col + 1], ]
+    neighbours = [[row-1, col-1], [row-1, col], [row-1, col+1],
+                  [row, col-1], [row, col+1],
+                  [row+1, col-1], [row+1, col], [row+1, col+1], ]
 
     #iterates through locations, retrieving the neighboring cells and returning them as a list
     actual = []
@@ -167,7 +164,7 @@ def main(WIN, WIDTH):
                     if event.type == pygame.MOUSEBUTTONDOWN:
                         run = False
 
-                #pygame.time.delay(50)
+                pygame.time.delay(250)
 
                 # creates a new updated frame
                 newcolours = update_grid(grid)

@@ -11,9 +11,9 @@ You start the game by clicking the space button. When you do, it switches the st
 
 ## Controls
 * Left click to toggle a cell's state
-* Press space to toggle the game's state (pause and unpause)
-* Press 'r' to reset the game
-* Press 'q' to quit the game
+* Press space to toggle the game's state (unpause)
+* Press 'esc' to pause the game
+* Press 'esc' and then close the window to quit the game
 
 ## Rules of the Game
 The rules of the game are as follows:
